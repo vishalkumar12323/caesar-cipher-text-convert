@@ -9,15 +9,37 @@
   <body>
     <header>
       <div class="head">
-        <p class="text">convert any text or message into secret message.</p>
+        <p class="text">encode or decode secret messages.</p>
       </div>
     </header>
-    <main>
-      <div class="main-box">
-        <div class="left-box"></div>
-        <div class="right-box"></div>
+
+    <main id="main">
+      <div class="one box">
+        <div class="options">
+          <select id="encode">
+            <option selected value="encode">encode</option>
+            <option value="decode">decode</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <textarea name="textarea" id="textarea"></textarea>
+        </div>
+      </div>
+      <div class="two box">
+        <div class="options">
+          <select id="decode">
+            <option selected value="decode">decode</option>
+            <option value="encode">encode</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <p id="text"></p>
+        </div>
       </div>
     </main>
+
     <!-- <script src="./public/script.js"></script> -->
   </body>
 </html>

@@ -1,47 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --total-height: 100vh;
 }
 
 header {
-    height: 5vh;
+    min-height: calc(5vh - var(--total-height));
     padding: 5px 0px;
-    background-color: sandybrown;
     box-shadow: 0px 0px 2px 1px black, 0px 0px 3px -5px black;
-}
+    background-color: #4cf4ec;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #004fef 25%, transparent 25%), linear-gradient(225deg, #004fef 25%, transparent 25%), linear-gradient(45deg, #004fef 25%, transparent 25%), linear-gradient(315deg, #004fef 25%, #4cf4ec 25%);
+    background-position: 4px 0, 4px 0, 0 0, 0 0;
+    background-size: 4px 4px;
+    background-repeat: repeat;
 
-.head {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .head {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    .text {
-        font-size: 1.5rem;
-        font-weight: 600;
-        word-spacing: 5px;
-        text-transform: capitalize;
+        .text {
+            font-size: 1.7rem;
+            font-weight: 700;
+            word-spacing: 5px;
+            text-transform: capitalize;
+            font-family: "Kode Mono", monospace;
+        }
     }
 }
 
-main {
+#main {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    background: linear-gradient(100deg, #001120d5, #001627ea);
+    min-height: calc(var(--total-height) - 6vh);
+    background-color: #f3eff9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23dbd1ec' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 2rem 0;
 
-    &::before {
-        content: "caeser cipher";
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.1;
-        color: lightgrey;
-        font-size: 18rem;
-        text-align: center;
+    & .one {
+        margin-bottom: 10px;
     }
 
-    .main-box {}
+    & .options {
+        width: 75%;
+        margin: 0 auto 5px auto;
+    }
+
+    & .options select {
+        padding: 3px 3px;
+        font-size: 1.2rem;
+    }
+
+    & .box .container {
+        width: 75%;
+        height: 35vh;
+        max-height: 35vh;
+        margin: 0 auto;
+        overflow-y: auto;
+        background-color: #ffffffad;
+    }
+
+    & .box .container textarea {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    & .two .container #text {
+        width: 100%;
+        height: 100%;
+    }
 }
