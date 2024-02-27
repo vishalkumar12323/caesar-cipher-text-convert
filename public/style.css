@@ -10,6 +10,8 @@
 
 :root {
     --total-height: 100vh;
+    --background: #004fef;
+    --secondary-background: #ffffffad;
 }
 
 header {
@@ -18,7 +20,7 @@ header {
     box-shadow: 0px 0px 2px 1px black, 0px 0px 3px -5px black;
     background-color: #4cf4ec;
     opacity: 1;
-    background-image: linear-gradient(135deg, #004fef 25%, transparent 25%), linear-gradient(225deg, #004fef 25%, transparent 25%), linear-gradient(45deg, #004fef 25%, transparent 25%), linear-gradient(315deg, #004fef 25%, #4cf4ec 25%);
+    background-image: linear-gradient(135deg, var(--background) 25%, transparent 25%), linear-gradient(225deg, var(--background) 25%, transparent 25%), linear-gradient(45deg, var(--background) 25%, transparent 25%), linear-gradient(315deg, var(--background) 25%, #4cf4ec 25%);
     background-position: 4px 0, 4px 0, 0 0, 0 0;
     background-size: 4px 4px;
     background-repeat: repeat;
@@ -66,7 +68,7 @@ header {
         max-height: 35vh;
         margin: 0 auto;
         overflow-y: auto;
-        background-color: #ffffffad;
+        background-color: var(--secondary-background);
     }
 
     & .box .container textarea {
@@ -74,8 +76,9 @@ header {
         height: 100%;
         border: none;
         outline: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 1px;
+        background-color: var(--secondary-background);
     }
 
     & .two .container #text {
