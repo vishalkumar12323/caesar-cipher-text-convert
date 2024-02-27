@@ -53,6 +53,17 @@ const latter = [
   "z",
 ];
 
+const cipherText = document.getElementById("text");
+const normalText = document.getElementById("textarea");
+const encodeOptions = document.getElementById("encode");
+const decodeOptions = document.getElementById("decode");
+const shiftNumber = document.getElementById("shift-amount");
+const btn = document.getElementById("btn");
+
 const getRendomWord = () => {};
 const compare = () => {};
-const init = () => {};
+const init = () => {
+  alert("running on console...");
+};
+
+btn.addEventListener("click", init);
