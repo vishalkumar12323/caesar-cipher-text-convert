@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 5vh;
+    background-color: salmon;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 2px 1px black, 0px 0px 3px -5px black;
+}
+
+.head {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+        font-size: 1.3rem;
+        word-spacing: 5px;
+        text-transform: capitalize;
+    }
+}
